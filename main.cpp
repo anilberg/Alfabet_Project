@@ -4,8 +4,9 @@ int main(){
 
     setAlphabet();
 
-    ab("ab");
+    str2stars("baba");
 
+    getchar();
 
     return 0;
 }

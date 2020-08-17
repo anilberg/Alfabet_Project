@@ -1,5 +1,5 @@
-#ifndef HARFLER_H_INCLUDED
-#define HARFLER_H_INCLUDED
+#ifndef LETTERS_H_INCLUDED
+#define LETTERS_H_INCLUDED
 
 #include <iostream>
 #include <string>
@@ -15,42 +15,40 @@ void gotoxy (int x, int y){
 }
 
 /// --- INIT --- ///
-struct letter{  //Letter's properties
-    int height,
-    weight,
-    order;
+struct letter{
+    int height, weight;
 };
 
-letter letters_array[26]; //All letters are kept by this array
+letter letters_array[26];
 
-void setAlphabet(){  //This function sets the alphabet with height and weight values
+void setAlphabet(){ //This function sets the alphabet with height and weight values
                     //into letters_array
-
     for(int i = 0; i < 26; i++){
 
-        //Identifying Letter's Height
-        if(i == 16)
+        //Identifying letters height values
+        if(i == 16){
             letters_array[i].height = 6;
-
-        else
+        }
+        else{
             letters_array[i].height = 5;
+        }
 
-        //Identifying Letter's Weight
-        if(i == 2 || i == 4 || i == 5 || i == 8 || i == 11 || i == 19)
+        //Identifying letters weight values
+
+        if(i == 2 || i == 4 || i == 5 || i == 8 || i == 11 || i == 19){
             letters_array[i].weight = 3;
-
-        else if(i == 12 || i == 22)
+        }
+        else if(i == 12 || i == 22){
             letters_array[i].weight = 5;
-
-        else
+        }
+        else{
             letters_array[i].weight = 4;
+        }
     }
 }
 
-/// ----- LETTERS ----- ///
-/// --- A --- ///
-void print_A(int coordinate){
-
+/// --- LETTERS --- ///
+void print_A(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 5; j++){
 
@@ -67,16 +65,14 @@ void print_A(int coordinate){
                 cout<<"  ";
             }
         }
-        gotoxy(coordinate, i);
+        gotoxy(totalWeight, i);
     }
+    gotoxy(totalWeight + (letters_array[0].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
 }
 
-/// --- B --- ///
-void print_B(int coordinate){
-
+void print_B(int totalWeight){
     for(int i = 1; i <= 5; i++){
-
-        cout<<"* ";
+         cout<<"* ";
         for(int j = 1; j <= 4; j++){
 
             if((i == 1 || i == 3 || i == 5) && j < 3)
@@ -88,18 +84,21 @@ void print_B(int coordinate){
             else
                 cout<<"  ";
         }
-        gotoxy(coordinate, i);
+        gotoxy(totalWeight, i);
     }
+    gotoxy(totalWeight + (letters_array[1].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
 }
-/// ----- LETTERS END ----- ///
 
+/// --- LETTERS END --- ///
 
-void ab(string word){
+/// --- PRINT --- ///
 
-    int len = word.length(),    //Word's lenght
-    totalWeight = 0;            //This variable keeps total weight of all letters
+void str2stars(string word){
 
-    for(int i = 0; i <= len; i++){
+    int length = word.length();
+    int totalWeight = 0;
+
+    for(int i = 0; i < length; i++){
 
         if(word[i] == 'a'){
             print_A(totalWeight);
@@ -110,13 +109,9 @@ void ab(string word){
             totalWeight += (letters_array[1].weight)*2 + 1;
         }
 
-        //gotoxy(totalWeight*2, 0);
-
-        //print_B(totalWeight*2);
-
 
     }
 
 }
 
-#endif // HARFLER_H_INCLUDED
+#endif // LETTERS_H_INCLUDED
