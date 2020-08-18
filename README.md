@@ -1,6 +1,5 @@
-# Strings_with_Stars
+# Strings with Stars
 
 ## SUMMARY ##
 Helloooo!!
 ## ##
-birlikte kodlama yazmayı öğrenmek.
