@@ -2,45 +2,35 @@
 #include <string>
 using namespace std;
 
-string to_lower(string kelime);
+string to_lower(string word);
 
 int main(){
 
-    string kelime = "ThiS iS aN sTRiNg";
+    string word = "ThiS iS aN sTRiNg";
 
-    cout<<"Eski kelime: "<<kelime<<endl;
+    cout<<"Old Word: "<<word<<endl;
 
-    cout<<"Yeni Kelime: "<<to_lower(kelime)<<endl;
+    cout<<"New Word: "<<to_lower(word)<<endl;
 
 
     return 0;
 }
 
-string to_lower(string kelime){
+string to_lower(string word){
 
-    int length = kelime.size(); ///Gelen kelimenin uzunlugu
+    int length = word.size(); ///Input word's length
 
-    for(int i = 0; i < length; i++){    ///Gelen kelimenin harf sayisi kadar donmeli
-                                        ///cunku harfleri tek tek kontrol edecez
+    for(int i = 0; i < length; i++){    ///We'll control all letter of this word.
 
+        for(int j = 65; j < 91; j++){   ///This loop gets A-Z letters as ASCII code.
 
-        for(int j = 65; j < 91; j++){   ///Bu dongunun amaci ASCII olarak buyuk harfler 65-90 arasi oldugu icin
-                                        ///tum buyuk harfleri kontrol ettigimiz kelimenin siradaki harfi ile
-                                        ///karsilastirmak
+            if(word[i] == (char)j){   ///This condition controls if a letter of word is capital.
 
-            if(kelime[i] == (char)j){   ///Burada butun buyuk harfleri gelen kelimenin siradaki harfine esit mi
-                                        ///diye kontrol ediyoruz
-
-                kelime[i] = (char)j + 32;   ///Eger esitse yani kelimede buyuk bir harf varsa o harfi kucuk
-                                            ///yapmamiz gerekir. Bunun icin harfi 32 ile toplayabiliriz ASCII
-                                            ///tablosunda ayni harfin kucugu buyuk olandan 32 sonra geldigi icin
-                                            ///yani 'A' = 65 ise 'a' = 97 oldugu icin 32 ile topladýk. Ve buyuk olan
-                                            ///harfi kucugu ile degistirdik.
+                word[i] = (char)j + 32;   ///If any capital letter exist, it turns into lower one as ASCII code
             }
 
         }
     }
 
-
-    return kelime;  ///Yenilenmis kelimeyi cevap olarak gonderiyoruz
+    return word;  ///New all lower word is returned
 }
