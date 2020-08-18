@@ -3,7 +3,7 @@ int main(){
 
     setAlphabet();
 
-    str2stars("baba");
+    str2stars("opqrstuvwyz");
 
     getchar();
 
