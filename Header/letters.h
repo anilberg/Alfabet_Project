@@ -49,7 +49,7 @@ string to_upper(string word){   //This func turns lower letters into capital.
 }
 
 /// --- INIT --- ///
-struct letter{  
+struct letter{
     int height, weight;
 };
 
@@ -124,18 +124,17 @@ void print_B(int totalWeight){
 }
 
 void print_C(int totalWeight){
-        for(int i = 1; i < 6; i++){
+    for(int i = 1; i < 6; i++){
         for(int j = 1; j < 4; j++){
 
-            if(j == 1 && !(i == 1 || i == 5)){
+            if(j == 1 && !(i == 1 || i == 5))
                 cout<<"* ";
-            }
-            else if((i == 1 || i == 5) && j != 1){
+
+            else if((i == 1 || i == 5) && j != 1)
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
         }
         gotoxy(totalWeight, i);
     }
@@ -143,538 +142,493 @@ void print_C(int totalWeight){
 }
 
 void print_D(int totalWeight){
-       for(int i = 1; i <= 5; i++){
-         cout<<"* ";
+    for(int i = 1; i <= 5; i++){
+        cout<<"* ";
         for(int j = 1; j <= 4; j++){
             if((i == 1 || i == 5) && j < 3)
                 cout<<"* ";
+
             else if(j == 3 && i != 1 && i != 5)
                 cout<<"* ";
+
             else
                 cout<<"  ";
-            }
+        }
         gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[3].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
 }
 
 void print_E(int totalWeight){
-     for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <=3 ; j++){
 
+            if(j == 1)
+                cout<<"*";
 
-for(int j = 1; j <=3 ; j++){
-
-
-    if(j == 1){
-        cout<<"*";
-    }
-    else if (i ==1 || i == 3 || i == 5 ){
-        cout<<"*";
-    }
-            gotoxy(totalWeight, i);
+            else if (i ==1 || i == 3 || i == 5 )
+                cout<<"*";
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[4].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-}}
+}
 
 void print_F(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 4; j++){
 
-            if(i == 1 || i == 3){
+            if(i == 1 || i == 3)
                 cout<<"* ";
-            }
-            else if(j == 1){
+
+            else if(j == 1)
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
+        }
             gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[5].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-}}
+}
 
 void print_G(int totalWeight){
- for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <=4 ; j++){
+
+            if(i==1 && j != 1)
+                cout<<"* ";
+
+            else if(i==2 && j==1)
+                cout<<"* ";
+
+            else if(i==3 && (j==3 || j==4))
+                cout<<"* ";
+
+            else if(i==4 && j==4)
+                cout<<"* ";
+
+            else if(i==5 && j !=1)
+                cout<<"* ";
+
+            else if(j==1)
+                cout<<"* ";
+
+            else
+                cout<<"  ";
 
 
-for(int j = 1; j <=4 ; j++){
-
-
-if(i==1 && j != 1){
-    cout<<"*";
-}
-else if(i==2 && j==1){
-    cout<<"*";
-}
-else if(i==3 && (j==3 || j==4)){
-    cout<<"*";
-}
-else if(i==4 && j==4){
-    cout<<"*";
-}
-else if(i==5 && j !=1){
-    cout<<"*";
-}
-else if(j==1){
-    cout<<"*";
-}
-
-else{
-    cout<<" ";
-}
-
-
-                gotoxy(totalWeight, i);
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[6].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
-}}
+}
 
 void print_H(int totalWeight){
- for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <=4 ; j++){
 
+            if(j==1 || j==4)
+                cout<<"*";
 
-for(int j = 1; j <=4 ; j++){
+            else if(i==3)
+                cout<<"*";
 
-       if(j==1 || j==4){
-
-        cout<<"*";
-       }
-else if(i==3){
-    cout<<"*";
-}
-else{
-    cout<<" ";
-}
-}         gotoxy(totalWeight, i);
+            else
+                cout<<" ";
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[7].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_I(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 4; j++){
 
-            if(i == 1 || i == 5){
+            if(i == 1 || i == 5)
                 cout<<"* ";
-            }
-            else if(j == 2){
-                cout<<"* ";
-            }
-            else{
-                cout<<"  ";
-            }
-        }
 
-    
-                gotoxy(totalWeight, i);
+            else if(j == 2)
+                cout<<"* ";
+
+            else
+                cout<<"  ";
+
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[8].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_J(int totalWeight){
- for(int i = 1; i <= 5; i++){
+for(int i = 1; i <= 5; i++){
+    for(int j = 1; j <=4 ; j++){
 
+        if(i==1 && j==3)
+            cout<<"*";
 
-for(int j = 1; j <=4 ; j++){
+        else if(j==4 && i!=5)
+            cout<<"*";
 
-if(i==1 && j==3){
-    cout<<"*";
-}
+        else if(i==4 && j==1)
+            cout<<"*";
 
-else if(j==4 && i!=5){
-    cout<<"*";
-}
-else if(i==4 && j==1){
-    cout<<"*";
-}
-else if(i==5 && (j==2 || j==3)){
-    cout<<"*";
-}
-else{
-    cout<<" ";
-}
-}
-                gotoxy(totalWeight, i);
+        else if(i==5 && (j==2 || j==3))
+            cout<<"*";
+
+        else
+            cout<<" ";
+
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[9].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_K(int totalWeight){
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 5; j++){
 
-   if(j==1){
-    cout<<"*";
-   }
-else if((i==1 || i==5) && j==4){
-    cout<<"*";
-}
-else if((i==2 || i==4) && j==3){
-    cout<<"*";
-}
-else if(i==3 && j==2){
-    cout<<"*";
-}
-else{
-    cout<<" ";
-}
+            if(j==1)
+                cout<<"*";
+
+            else if((i==1 || i==5) && j==4)
+                cout<<"*";
+
+            else if((i==2 || i==4) && j==3)
+                cout<<"*";
+
+            else if(i==3 && j==2)
+                cout<<"*";
+
+            else
+                cout<<" ";
+
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[10].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_L(int totalWeight){
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 3; j++){
-            if(i == 5 || j == 1){
+
+            if(i == 5 || j == 1)
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
+
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[11].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_M(int totalWeight){
      for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 5; j++){
+
             if(j == 1 || j == 5)
                 cout<<"* ";
+
             else if(((i == 2) && (j != 3)) || (i == 3 && j != 2 && j != 4))
                 cout<<"* ";
+
             else
                 cout<<"  ";
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[12].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_N(int totalWeight){
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
 
-if(i == 1 && (j == 4 || j == 1)){
-    cout<<"*";
-}
-else if(i == 2 && j !=3){
-    cout<<"*";
-}
-else if(i == 3 && j !=2){
-    cout<<"*";
-}
-else if(i == 4 && (j == 4 || j == 1)){
-    cout<<"*";
-}
-else if(i == 5 && (j == 4 || j == 1)){
-    cout<<"*";
-}
-    else{cout<<" ";}
+            if(i == 1 && (j == 4 || j == 1))
+                cout<<"*";
+
+            else if(i == 2 && j !=3)
+                cout<<"*";
+
+            else if(i == 3 && j !=2)
+                cout<<"*";
+
+            else if(i == 4 && (j == 4 || j == 1))
+                cout<<"*";
+
+            else if(i == 5 && (j == 4 || j == 1))
+                cout<<"*";
+
+            else
+                cout<<" ";
 
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[13].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_O(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 5; j++){
 
-            if((i == 1 || i == 5) && !(j == 1 || j == 4)){
+            if((i == 1 || i == 5) && !(j == 1 || j == 4))
                 cout<<"* ";
-            }
-            else if((j == 1 || j == 4) && !(i == 1 || i == 5)){
+
+            else if((j == 1 || j == 4) && !(i == 1 || i == 5))
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[14].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_P(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 5; j++){
 
-            if(j == 1){
+            if(j == 1)
                 cout<<"* ";
-            }
-            else if((i == 1 || i == 4) && j != 4){
-                cout<<"* ";
-            }
-            else if((i == 2 || i == 3) && j == 4){
-                cout<<"* ";
-            }
-            else{
-                cout<<"  ";
-            }
-        }
 
-    
-                gotoxy(totalWeight, i);
+            else if((i == 1 || i == 4) && j != 4)
+                cout<<"* ";
+
+            else if((i == 2 || i == 3) && j == 4)
+                cout<<"* ";
+
+            else
+                cout<<"  ";
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[15].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_Q(int totalWeight){
     for(int i = 1; i <= 6; i++){
         for(int j = 1; j <= 4; j++){
-   if((j == 1 || j == 4) && !(i == 1 || i == 5 || i == 6)){
-      cout<<"*";
-      }
-else if((j==2 || j==3)&&(i==1||i==5)){
-    cout<<"*";
-}
-else if(i==6&&j==4){
-    cout<<"*";
-}
-  else{cout<<" ";}
-    }
-    gotoxy(totalWeight, i);
+
+            if((j == 1 || j == 4) && !(i == 1 || i == 5 || i == 6))
+                cout<<"*";
+
+            else if((j==2 || j==3)&&(i==1||i==5))
+                cout<<"*";
+
+            else if(i==6&&j==4)
+                cout<<"*";
+
+            else
+                cout<<" ";
+        }
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[16].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_R(int totalWeight){
-for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
 
+            if(i == 1 && j !=4)
+                cout<<"*";
 
-if(i == 1 && j !=4){
-    cout<<"*";
-}
+            else if(i == 2 && (j == 4 || j == 1))
+                cout<<"*";
 
-else if(i == 2 && (j == 4 || j == 1)){
-    cout<<"*";
-}
-else if(i == 3 && (j == 4 || j == 1)){
-    cout<<"*";
-}
+            else if(i == 3 && (j == 4 || j == 1))
+                cout<<"*";
 
-else if(i == 4 && j !=4){
-    cout<<"*";
-}
-else if(i == 5 && (j == 4 || j == 1)){
-    cout<<"*";
-}
-else{
-        cout<<" ";
-}
+            else if(i == 4 && j !=4)
+                cout<<"*";
+
+            else if(i == 5 && (j == 4 || j == 1))
+                cout<<"*";
+
+            else
+                cout<<" ";
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[17].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_S(int totalWeight){
-for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
 
-if(i == 1 && j != 1){
+            if(i == 1 && j != 1)
+                cout<<"*";
 
+            else if(i == 2 && j == 1)
+                cout<<"*";
 
-    cout<<"*";
+            else if(i == 3 && (j == 2 || j == 3))
+                cout<<"*";
 
-}
-else if(i == 2 && j == 1){
-    cout<<"*";
-}
-    else if(i == 3 && (j == 2 || j == 3)){
-cout<<"*";
-}
-else if(i == 4 && j == 4){
-    cout<<"*";
-}
-else if(i == 5 && j != 4){
-    cout<<"*";
-}
-else{
-    cout<<" ";
-}
+            else if(i == 4 && j == 4)
+                cout<<"*";
+
+            else if(i == 5 && j != 4)
+                cout<<"*";
+
+            else
+                cout<<" ";
         }
-    gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[18].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_T(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 4; j++){
 
-            if(i == 1){
+            if(i == 1)
                 cout<<"* ";
-            }
-            else if(j == 2){
+
+            else if(j == 2)
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
+
         }
-
-
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[19].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_U(int totalWeight){
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
-            if(i == 5 || j == 1 || j == 4){
+
+            if(i == 5 || j == 1 || j == 4)
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
+
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[20].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_V(int totalWeight){
     for(int i = 1; i < 6; i++){
         for(int j = 1; j < 5; j++){
 
-            if(j == 1 && i != 5){
+            if(j == 1 && i != 5)
                 cout<<"* ";
-            }
-            else if(i == 5 && j == 2){
+
+            else if(i == 5 && j == 2)
                 cout<<"* ";
-            }
-            else if(j == 3 && (i == 3 || i == 4)){
+
+            else if(j == 3 && (i == 3 || i == 4))
                 cout<<"* ";
-            }
-            else if(j == 4 && (i == 1 || i == 2)){
+
+            else if(j == 4 && (i == 1 || i == 2))
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
-
         }
-
-
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[21].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_W(int totalWeight){
- for(int i = 1; i <= 5; i++){
+    for(int i = 1; i <= 5; i++){
+        for(int j = 1; j <= 5 ; j++){
 
+            if(i==1 && (j==1 || j==5))
+                cout<<"*";
 
-for(int j = 1; j <= 5 ; j++){
+            else if(i==2 && (j==1 || j==5))
+                cout<<"*";
 
+            else if(i==3 && (j==1 || j==5))
+                cout<<"*";
 
-if(i==1 && (j==1 || j==5)){
-    cout<<"*";
-}
-else if(i==2 && (j==1 || j==5)){
-    cout<<"*";
-}
-else if(i==3 && (j==1 || j==5)){
-    cout<<"*";
-}
-else if(i==4 && (j==1 || j==5)){
-    cout<<"*";
-}
-else if((i!=1 && i!=5) &&j==3){
-    cout<<"*";
-}
-else if(i==5 && (j==2 || j==4)){
-    cout<<"*";
-}
+            else if(i==4 && (j==1 || j==5))
+                cout<<"*";
 
-else{
-    cout<<" ";
-}
-}
+            else if((i!=1 && i!=5) &&j==3)
+                cout<<"*";
+
+            else if(i==5 && (j==2 || j==4))
+                cout<<"*";
+
+            else
+                cout<<" ";
+
+        }
         gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[22].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_X(int totalWeight){
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
 
-            if((j == 1 || j == 4) && i != 3){
+            if((j == 1 || j == 4) && i != 3)
                 cout<<"* ";
-            }
-            else if(i == 3 && !(j == 1 || j == 4)){
+
+            else if(i == 3 && !(j == 1 || j == 4))
                 cout<<"* ";
-            }
-            else{
+
+            else
                 cout<<"  ";
-            }
         }
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[23].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_Y(int totalWeight){
      for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 4; j++){
-            if(((j == 1) && (i != 3) && (i != 4) && (i != 5)) || (j == 4 && i != 5) )
+
+            if(((j == 1) && (i != 3) && (i != 4) && (i != 5)) || (j == 4 && i != 5))
                 cout<<"* ";
+
             else if(((i == 3) && (j != 1)) || (i == 5 && (j != 1 && j != 4)))
                 cout<<"* ";
+
             else
                 cout<<"  ";
         }
-
-
-                gotoxy(totalWeight, i);
+        gotoxy(totalWeight, i);
     }
     gotoxy(totalWeight + (letters_array[24].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 void print_Z(int totalWeight){
     int z = 3;
     for(int i = 1; i <= 5; i++){
         for(int j = 1; j <= 3; j++){
-            if(i == 1 || i == 5 || j == z+1 )
+
+            if(i == 1 || i == 5 || j == z + 1)
                cout<<"* ";
+
             else
                cout<<"  ";
         }
-    z--;
+        z--;
 
-    gotoxy(totalWeight, i);}
-
+        gotoxy(totalWeight, i);
+    }
     gotoxy(totalWeight + (letters_array[25].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
-
 }
 
 /// --- LETTERS END --- ///
