@@ -42,5 +42,4 @@ string to_upper(string word){
     return word;
 }
 
-
 #endif // MYFUNCS_H_INCLUDED
