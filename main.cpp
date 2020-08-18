@@ -1,10 +1,8 @@
-#include "Header/letters.h"
+//#include "Header/letters.h"
+#include "AlternateHeaders/str2stars.h"
 int main(){
 
-    setAlphabet();
-
-    str2stars("opqrstuvwyz");
-
+    str2stars("cabcbacba");
     getchar();
 
     return 0;
