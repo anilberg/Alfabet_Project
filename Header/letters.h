@@ -669,14 +669,13 @@ void print_Z(int totalWeight){
             else
                cout<<"  ";
         }
-    cout<<endl;
     z--;
 
-    gotoxy(totalWeight, i);
+    gotoxy(totalWeight, i);}
 
     gotoxy(totalWeight + (letters_array[25].weight)*2 + 1, 0);   //Avoid cursor's position end on letter's bottom
 
-}}
+}
 
 /// --- LETTERS END --- ///
 
