@@ -49,37 +49,37 @@ string to_upper(string word){   //This func turns lower letters into capital.
 }
 
 /// --- INIT --- ///
-struct letter{
+struct letter{  
     int height, weight;
 };
 
-letter letters_array[26];
+letter letters_array[26];   //This array keeps height and weight values of letters that printing with stars
 
 void setAlphabet(){ //This function sets the alphabet with height and weight values
                     //into letters_array
     for(int i = 0; i < 26; i++){
 
         //Identifying letters height values
-        if(i == 16){
+        if(i == 16){    // Q = 16. order, it's height should be 6.
             letters_array[i].height = 6;
         }
-        else{
+        else{   //Other's height should be 5.
             letters_array[i].height = 5;
         }
 
         //Identifying letters weight values
-
-        if(i == 2 || i == 4 || i == 5 || i == 8 || i == 11 || i == 19){
+        if(i == 2 || i == 4 || i == 5 || i == 8 || i == 11 || i == 19){ //C, E, F, I, L, T should be 3.
             letters_array[i].weight = 3;
         }
-        else if(i == 12 || i == 22){
+        else if(i == 12 || i == 22){    //M, W should be 5.
             letters_array[i].weight = 5;
         }
-        else{
+        else{   //C, E, F, I, L, T should be 3.
             letters_array[i].weight = 4;
         }
     }
 }
+/// --- INIT END --- ///
 
 /// --- LETTERS --- ///
 void print_A(int totalWeight){
@@ -125,12 +125,12 @@ void print_B(int totalWeight){
 
 /// --- LETTERS END --- ///
 
-/// --- PRINT --- ///
+/// --- PRINT FUNC --- ///
 
-void str2stars(string word){
+void str2stars(string word){    //This func prints input string as star letters.
 
-    int length = word.length();
-    int totalWeight = 0;
+    int length = word.length(); //Input word's length
+    int totalWeight = 0;    //Total weight of letters. This variable must be change after every letter printed.
 
     for(int i = 0; i < length; i++){
 
@@ -142,10 +142,7 @@ void str2stars(string word){
             print_B(totalWeight);
             totalWeight += (letters_array[1].weight)*2 + 1;
         }
-
-
     }
-
 }
 
 #endif // LETTERS_H_INCLUDED
