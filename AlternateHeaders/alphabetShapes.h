@@ -35,12 +35,72 @@ int alphabet[26][6][8] = {
  {1,0,1,0,1,0,0,0},      //* * *
  {0,0,0,0,0,0,0,0}},     //
 
+// -- E -- //          //This 2 dims array keeps the letter's shape
+
+// -- F -- //          //This 2 dims array keeps the letter's shape
+{{1,0,1,0,1,0,0,0},      //* * *
+ {1,0,0,0,0,0,0,0},      //*
+ {1,0,1,0,1,0,0,0},      //* * *
+ {1,0,0,0,0,0,0,0},      //*
+ {1,0,0,0,0,0,0,0},      //*
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- G -- //          //This 2 dims array keeps the letter's shape
+
+// -- H -- //          //This 2 dims array keeps the letter's shape
+
+// -- I -- //          //This 2 dims array keeps the letter's shape
+{{1,0,1,0,1,0,0,0},      //* * *
+ {0,0,1,0,0,0,0,0},      //*
+ {0,0,1,0,0,0,0,0},      //* * *
+ {0,0,1,0,0,0,0,0},      //*
+ {1,0,1,0,1,0,0,0},      //*
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- J -- //          //This 2 dims array keeps the letter's shape
+
+// -- K -- //          //This 2 dims array keeps the letter's shape
+
+// -- L -- //          //This 2 dims array keeps the letter's shape
+
 // -- M -- //          //This 2 dims array keeps the letter's shape
 {{1,0,0,0,0,0,1,0},      //*       *
  {1,1,0,0,0,1,1,0},      //* *   * *
  {1,0,1,0,1,0,1,0},      //*   *   *
  {1,0,0,1,0,0,1,0},      //*       *
  {1,0,0,0,0,0,1,0},      //*       *
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- N -- //          //This 2 dims array keeps the letter's shape
+
+// -- O -- //          //This 2 dims array keeps the letter's shape
+{{0,0,1,0,1,0,0,0},      //  * *     
+ {1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,0,0,1,0},      //*     *
+ {0,0,1,0,1,0,0,0},      //  * * 
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- P -- //          //This 2 dims array keeps the letter's shape
+{{1,0,1,0,1,0,0,0},      //  * * *    
+ {1,0,0,0,0,0,1,0},      //*       *
+ {1,0,0,0,0,0,1,0},      //*       *
+ {1,0,1,0,1,0,0,0},      //* * * *
+ {1,0,0,0,0,0,0,0},      //* 
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- Q -- //          //This 2 dims array keeps the letter's shape
+
+// -- R -- //          //This 2 dims array keeps the letter's shape
+
+// -- S -- //          //This 2 dims array keeps the letter's shape
+
+// -- T -- //          //This 2 dims array keeps the letter's shape
+{{0,1,0,1,0,1,0,0},      //*     *
+ {0,0,0,1,0,0,0,0},      //*     *
+ {0,0,0,1,0,0,0,0},      //*     *
+ {0,0,0,1,0,0,0,0},      //*     *
+ {0,0,0,1,0,0,0,0},      //* * * *
  {0,0,0,0,0,0,0,0}},     //
 
 // -- U -- //          //This 2 dims array keeps the letter's shape
@@ -50,6 +110,26 @@ int alphabet[26][6][8] = {
  {1,0,0,0,0,0,1,0},      //*     *
  {1,0,1,0,1,0,1,0},      //* * * *
  {0,0,0,0,0,0,0,0}},     //
+
+// -- V -- //          //This 2 dims array keeps the letter's shape
+{{1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,1,0,0,0},      //*   *
+ {1,0,0,0,1,0,0,0},      //*   *
+ {0,0,1,0,0,0,0,0},      //  * 
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- W -- //          //This 2 dims array keeps the letter's shape
+
+// -- X -- //          //This 2 dims array keeps the letter's shape
+{{1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,0,0,1,0},      //*     *
+ {0,1,0,1,0,1,0,0},      // * * *   
+ {1,0,0,0,0,0,1,0},      //*     *
+ {1,0,0,0,0,0,1,0},      //*     *
+ {0,0,0,0,0,0,0,0}},     //
+
+// -- Y -- //          //This 2 dims array keeps the letter's shape
 
  // -- Z -- //          //This 2 dims array keeps the letter's shape
 {{1,0,1,0,1,0,1,0},      //* * * *

@@ -2,7 +2,7 @@
 #include "AlternateHeaders/str2stars.h"
 int main(){
 
-    str2stars("cabcbacba");
+    str2stars("O");
     getchar();
 
     return 0;
