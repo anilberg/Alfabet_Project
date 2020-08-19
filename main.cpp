@@ -3,7 +3,7 @@
 int main(){
 
 
-    str2stars("GOD");
+    str2stars("heel lo");
 
     getchar();
 
