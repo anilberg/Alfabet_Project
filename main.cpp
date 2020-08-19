@@ -3,7 +3,7 @@
 int main(){
 
 
-    str2stars("THREE WORDS");
+    str2stars("GOD");
 
     getchar();
 
