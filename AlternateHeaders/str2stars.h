@@ -30,9 +30,9 @@ void str2stars(string word){    //This func prints input string as star letters.
             }
             gotoxy(totalWeight, row + 1);
         }
-        gotoxy(totalWeight + 9, 0);   //Avoid cursor's position end on letter's bottom
+        gotoxy(totalWeight + 8, 0);   //Avoid cursor's position end on letter's bottom
 
-        totalWeight += 9;   //After the letter printed total weight increased 9
+        totalWeight += 8;   //After the letter printed total weight increased 9
 
     }
 }
