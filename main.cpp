@@ -2,7 +2,9 @@
 #include "AlternateHeaders/str2stars.h"
 int main(){
 
-    str2stars("ONE WORDS");
+
+    str2stars("THREE WORDS");
+
     getchar();
 
     return 0;
