@@ -13,7 +13,6 @@ using namespace std;
 /// --- PRINT FUNC --- ///
 void str2stars(string word){    //This func prints input string as star letters.
 
-    int length = word.length(); //Input word's length
     int totalWeight = 0;        //Total weight of letters. This variable must be change after every letter printed.
 
     string allCapWord = to_upper(word);  //Input word turns into all capital characters
@@ -42,16 +41,16 @@ void str2stars(string word){    //This func prints input string as star letters.
         else if(allCapWord[i] == ' '){   //If counting letter is space, must be printed
 
             for(int row = 0; row < 6; row++){   //These two loop generate 6 rows 3 cols space
-                for(int col = 0; col < 3; col++){
+                for(int col = 0; col < 4; col++){
 
                     cout<<" ";
                 }
 
                 gotoxy(totalWeight, row + 1);   //Creating new line
             }
-            gotoxy(totalWeight + 3, 0);   //Avoid cursor's position end on letter's bottom
+            gotoxy(totalWeight + 4, 0);   //Avoid cursor's position end on letter's bottom
 
-            totalWeight += 3;   //After the letter printed total weight increased 8
+            totalWeight += 4;   //After the letter printed total weight increased 4
         }
 
 
