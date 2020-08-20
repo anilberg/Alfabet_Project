@@ -2,7 +2,9 @@
 
 int main(){
 
-    str2stars("abcc");
+    string abc = "anil berk atas";
+
+    str2stars(abc);
 
     getchar();
 
