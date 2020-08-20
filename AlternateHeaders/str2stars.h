@@ -52,7 +52,9 @@ void str2stars(string word){    //This func prints input string as star letters.
 
             totalWeight += 4;   //After the letter printed total weight increased 4
         }
-
+        
+        if(i <= 14 && i < 15)
+           gotoxy(0, 120);
 
         i++;    //Loop variable
     }
