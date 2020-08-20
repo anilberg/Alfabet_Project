@@ -25,6 +25,9 @@ void str2stars(string word){    //This func prints input string as star letters.
                 if(alphabet[(int)allCapWord[i] - 65][row][col] == 1)
                     cout<<"*";
 
+                else if(alphabet[(int)allCapWord[i] - 32] == char(32))
+                    cout<<" ";
+
                 else
                     cout<<" ";
             }
