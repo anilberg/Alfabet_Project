@@ -20,7 +20,7 @@ void str2stars(string word){    //This func prints input string as star letters.
     int i = 0, yaxis = 8, counter = 0;
     while(allCapWord[i]){   //While letters are exist
 
-        if(i >= 14){
+        if(i >= 14){  //Check if letter bigger than output screen and if it is, write in new line
 
             if(counter == 0){
                totalWeight = 0;}
