@@ -60,33 +60,11 @@ void str2stars(string word){    //This func prints input string as star letters.
 
             totalWeight += 4;   //After the letter printed total weight increased 4
 
-        SpaceCounter ++;
-        
+            SpaceCounter ++;
+
         }
-        
+
         i++;    //Loop variable
     }
-
-    //This loops is from 1.0.4 unless isalpha control
-    /*for(int i = 0; i < length; i++){
-        for(int row = 0; row < 6; row++){
-            for(int col = 0; col < 8; col++){
-
-                if(alphabet[(int)allCapWord[i] - 65][row][col] == 1)
-                    cout<<"*";
-
-                else if(alphabet[(int)allCapWord[i] - 32] == char(32))
-                    cout<<" ";
-
-                else
-                    cout<<" ";
-            }
-            gotoxy(totalWeight, row + 1);
-        }
-        gotoxy(totalWeight + 8, 0);   //Avoid cursor's position end on letter's bottom
-
-        totalWeight += 8;   //After the letter printed total weight increased 9
-
-    }*/
 }
 #endif // STR2STARS_H_INCLUDED
