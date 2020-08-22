@@ -4,11 +4,13 @@
 
 int main(){
 
+
     resetSettings();
 
     int arr[2] = {2, 42};
 
     writeSettings(arr);
+
 
     string abc = "anil berk bilge han necmi berat";
 
