@@ -2,7 +2,7 @@
 
 int main(){
 
-    string abc = "anil berk atas";
+    string abc = "anil berk bilge han necmi berat";
 
     str2stars(abc);
 
