@@ -20,7 +20,7 @@ void str2stars(string word){    //This func prints input string as star letters.
     int i = 0, yaxis = 0, SpaceCounter = 0;
     while(allCapWord[i]){   //While letters are exist
 
-        if(SpaceCounter == 2){
+        if(SpaceCounter == MAX_SPACE){
             yaxis += 8;
             totalWeight = 0;
             SpaceCounter = 0;
@@ -34,7 +34,7 @@ void str2stars(string word){    //This func prints input string as star letters.
                 for(int col = 0; col < 8; col++){
 
                     if(alphabet[(int)allCapWord[i] - 65][row][col] == 1)    //Detecting which letter will print
-                        cout<<"*";
+                        cout<<char(USING_SHAPE);
 
                     else
                         cout<<" ";
