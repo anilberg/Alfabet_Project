@@ -86,7 +86,7 @@ int* readSettings(){
 
 ///This func writes the settings to settings.txt
 //Settings with array index: (For now we have 2 user settings)
-// 0 - MaxLetter (Default 14)
+// 0 - MaxLetter (Default 2)
 // 1 - UsingShape (Default 42 or char(*))
 void writeSettings(int arr[2]){
 
