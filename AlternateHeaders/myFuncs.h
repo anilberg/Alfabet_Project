@@ -6,9 +6,10 @@
 using namespace std;
 
 /// --- GLOBAL VARIABLES --- ///
+
 int MAX_SPACE;    //This variable controls when new line will create
 
-int USING_SHAPE;
+int USING_SHAPE;   //This variable controls which character will use
 
 ///With this func we can control cursor's position.
 void gotoxy (int x, int y){
@@ -103,6 +104,7 @@ void writeSettings(int arr[2]){
 
         MAX_SPACE = arr[0];
         USING_SHAPE = arr[1];
+
     }
 
     file.close();
@@ -118,7 +120,7 @@ void resetSettings(){
 
     if(file.is_open()){ //If file opened
 
-        file << "MaxSpaces " << 14 << "\n" << "UsingShape " << 42;
+        file << "MaxSpaces " << 2 << "\n" << "UsingShape " << 42;
 
         MAX_SPACE = 2;    //reseting variables
         USING_SHAPE = 42;
