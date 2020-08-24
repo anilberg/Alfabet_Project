@@ -1,2 +1,2 @@
-MaxSpaces 3
-UsingShape 219
+MaxSpaces 2
+UsingShape 42
