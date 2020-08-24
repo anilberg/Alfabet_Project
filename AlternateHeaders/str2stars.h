@@ -20,9 +20,7 @@ void str2stars(string word){    //This func prints input string as star letters.
     int i = 0, yaxis = 0, SpaceCounter = 0;
     while(allCapWord[i]){   //While letters are exist
 
-
         if(SpaceCounter == MAX_SPACE){
-
             yaxis += 8;
             totalWeight = 0;
             SpaceCounter = 0;
@@ -62,31 +60,7 @@ void str2stars(string word){    //This func prints input string as star letters.
 
             totalWeight += 4;   //After the letter printed total weight increased 4
 
-
-        SpaceCounter ++;
-        
-        }
-        
-        i++;    //Loop variable
-    }
-
-    //This loops is from 1.0.4 unless isalpha control
-    /*for(int i = 0; i < length; i++){
-        for(int row = 0; row < 6; row++){
-            for(int col = 0; col < 8; col++){
-
-
             SpaceCounter ++;
-
-
-=======
-                else if(alphabet[(int)allCapWord[i] - 32] == char(32))
-                    cout<<" ";
-
-                else
-                    cout<<" ";
-            }
-            gotoxy(totalWeight, row + 1);
 
         }
 
